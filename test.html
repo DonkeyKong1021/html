@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debugging</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="lists.css">
+</head>
+<body>
+    <div id="nav-dropdown">
+        <button id="nav-toggle">&#9776;</button> 
+        <div id="nav-content">
+            <ul>
+                <li><a href="saved-lists.html">Saved Lists</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="todo-container">
+        <h1>Input Task</h1>
+        <h4>To add to list click Enter</h4>
+        <input type="text" id="task-input">
+        <button id="add-task-button" class="add-task-button">Add Task</button>
+    </div>
+    <div class="task-list-container">
+        <div class="container-wrapper">
+            <div id="task-container">
+                <h2>Tasks</h2> bvbvgvg
+                <ul id="task-list"></ul>
+            </div>
+            <div id="selected-task-container">
+                <h2>To-Do</h2>
+                <ul id="selected-task-list"></ul>
+                <button id="save-button" class="center-button" style="display: none;"><i class="fas fa-save"></i> Save</button>
+            </div>
+        </div>
+    </div>
+    <script src="lists.js"></script>
+</body>
+</html>
+

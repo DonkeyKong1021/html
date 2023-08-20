@@ -1,0 +1,202 @@
+body {
+    padding: 20px;
+    background: black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+#nav-dropdown {
+    position: absolute;
+    top: 20px;
+    left: 20px; /* Adjust this value to position the dropdown container */
+    z-index: 1;
+}
+
+#nav-toggle {
+    background-color: black;
+    font-weight: bolder;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 20px;
+    position: absolute;
+    top: 0; /* Position the icon at the top */
+    left: 0; /* Position the icon at the left */
+}
+
+#nav-content {
+    background-color: #333;
+    display: none;
+    position: absolute;
+    border-radius: 5px;
+    padding: 10px;
+    top: 40px;
+    left: 0;
+    width: 150px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+}
+
+#nav-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+#nav-content li {
+    margin: 5px 0;
+}
+
+#nav-content a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+#nav-content.active {
+    display: block;
+}
+
+.container-wrapper {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+
+h1, h3, h4, h5, h6 {
+    font-weight: bolder;
+    color: white;
+    text-align: center;  
+}
+
+h2 {
+    font-weight: bolder;
+    color: black;
+    text-align: center;
+}
+
+
+#todo-container {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto 20px;
+    padding: 20px;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+#task-input {
+    width: 90%;
+    padding: 8px;
+    border: 2px solid white;
+    border-radius: 3px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+.task-list-container {
+    max-width: 600px;
+    width: 50%;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 5px;
+}
+
+.task-input {
+    margin-bottom: 0px; /* Add spacing between input and button */
+}
+
+.add-task-button {
+    margin-top: 10px; /* Add spacing above the button */
+}
+    
+#task-container,
+#selected-task-container {
+    display: inline-block; /* Display containers side by side */
+    max-width: 600px;
+    width: 50%; /* Set width to 50% for each container */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 5px; /* Add spacing between containers */
+    background-color: white;
+}
+  
+#task-list,
+#selected-task-list {
+    list-style-type: none;
+    padding: 0;
+    color: black;
+    font-weight: bold;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    border: 1px solid #ccc;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.selector-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    background-color: transparent; /* Set a transparent background */
+    border: 2px solid black; /* Add a border to create a hollow dot */
+    border-radius: 50%; /* Makes it circular */
+    margin-right: 10px; /* Adds space between icon and text */
+    cursor: pointer; /* Change the cursor to a pointer on hover */
+}
+
+.selector-icon.selected {
+    background-color: black; /* Change the background color to fill white */
+    border: 2px solid black; /* Change the border color to white */
+}
+
+
+.selected-task-item {
+    align-items: center;
+    padding: 8px;
+    border: 1px solid #ccc;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#save-button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+#save-button i {
+    margin-right: 5px;
+}
+
+.center-button {
+    display: block;
+    margin: 0 auto;
+    background-color: black;
+}
